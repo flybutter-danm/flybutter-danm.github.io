@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>flybutter-danm</title>
+  <meta name="description" content="flybutter-danm 的主页">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='88'>&#129419;</text></svg>">
+  <style>
+    :root{
+      --bg:#0b0f14; --fg:#e6edf3; --muted:#8b98a5; --line:#1f2933;
+      --card:#111820; --accent:#3fb950;
+    }
+    @media (prefers-color-scheme: light){
+      :root{--bg:#f6f8fa; --fg:#1f2328; --muted:#59636e; --line:#d8dee4; --card:#ffffff; --accent:#1a7f37;}
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; background:var(--bg); color:var(--fg);
+      font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",Helvetica,Arial,sans-serif;
+      display:flex; align-items:center; justify-content:center; padding:24px;
+    }
+    main{width:100%; max-width:680px}
+    h1{margin:0 0 6px; font-size:2rem; letter-spacing:-.02em}
+    .sub{margin:0 0 32px; color:var(--muted); font-size:.95rem}
+    .links{display:grid; gap:14px}
+    a.card{
+      display:block; padding:18px 20px;
+      background:var(--card); border:1px solid var(--line); border-radius:14px;
+      color:inherit; text-decoration:none; transition:transform .15s ease, border-color .15s ease;
+    }
+    a.card:hover{border-color:var(--accent); transform:translateY(-2px)}
+    a.card .name{display:block; font-weight:600}
+    a.card .name::after{content:" \2197"; color:var(--muted); font-weight:400}
+    a.card .desc{display:block; color:var(--muted); font-size:.88rem}
+    footer{margin-top:28px; color:var(--muted); font-size:.8rem}
+    footer a{color:inherit}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>flybutter-danm</h1>
+    <p class="sub">RoboMaster &middot; OpenCV &middot; C++</p>
+
+    <!-- ▼▼ 两个链接就改这里，把 href 和文字换掉即可 ▼▼ -->
+    <nav class="links">
+      <a class="card" href="https://github.com/flybutter-danm/Fly_Butter-for-RM">
+        <span class="name">Fly_Butter-for-RM</span>
+        <span class="desc">RoboMaster 战队代码</span>
+      </a>
+      <a class="card" href="https://github.com/flybutter-danm/use-for-vibecoding">
+        <span class="name">use-for-vibecoding</span>
+        <span class="desc">实验与练习</span>
+      </a>
+    </nav>
+    <!-- ▲▲ 两个链接就改这里 ▲▲ -->
+
+    <footer>
+      Hosted on <a href="https://pages.github.com/">GitHub Pages</a> &middot;
+      <a href="https://github.com/flybutter-danm">github.com/flybutter-danm</a>
+    </footer>
+  </main>
+</body>
+</html>
